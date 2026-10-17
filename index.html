@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Syah Putra</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172554;
+            background: #f8faff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span,
+        h1 span {
+            color: #4f75f5;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 80px 8%;
+            min-height: 550px;
+            background: linear-gradient(120deg, #f5f7ff, #edf2ff);
+        }
+
+        .intro {
+            max-width: 700px;
+        }
+
+        .welcome {
+            color: #4f75f5;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 4vw, 52px);
+            margin: 20px 0;
+        }
+
+        .intro h3 {
+            margin-bottom: 18px;
+            color: #475569;
+        }
+
+        .intro p {
+            line-height: 1.8;
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 20px;
+            border-radius: 9px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #4f75f5;
+            color: white;
+        }
+
+        .secondary {
+            background: white;
+            color: #172554;
+            border: 1px solid #dbe2ef;
+        }
+
+        .profile {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 25px;
+            width: 310px;
+            min-width: 260px;
+            text-align: center;
+            box-shadow: 0 15px 45px #1e293b10;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #e2e8f0;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .profile h3 {
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            color: #64748b;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .line {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 20px 0;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+        }
+
+        section h2 {
+            color: #4f75f5;
+            margin-bottom: 18px;
+        }
+
+        section p,
+        section li {
+            line-height: 1.8;
+            color: #475569;
+        }
+
+        section ul {
+            padding-left: 22px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #172554;
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 50px 6%;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .profile {
+                width: 100%;
+                max-width: 310px;
+            }
+
+            section {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Syah<span>.</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="intro">
+            <div class="welcome">HALO, SELAMAT DATANG!</div>
+
+            <h1>Saya <span>Syah Putra</span></h1>
+
+            <h3>Mahasiswa Teknik Informatika</h3>
+
+            <p>
+                Saya sedang belajar membangun website dan
+                mengembangkan kemampuan di bidang teknologi
+                informasi. Ini adalah website landing page
+                portofolio pribadi saya.
+            </p>
+
+            <div class="buttons">
+                <a href="#proyek" class="btn primary">
+                    Lihat Proyek
+                </a>
+
+                <a href="#kontak" class="btn secondary">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="foto.jpg"
+                 alt="Foto Syah Putra"
+                 class="photo">
+
+            <h3>Syah Putra</h3>
+            <p>Teknik Informatika</p>
+            <p>Universitas Medan Area</p>
+
+            <hr class="line">
+
+            <p>Belajar • Berkarya • Berkembang</p>
+        </div>
+    </div>
+
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+            Perkenalkan, nama saya Syah Putra.
+            Saya mahasiswa Teknik Informatika yang tertarik
+            mempelajari pemrograman, pengembangan website,
+            dan teknologi informasi.
+        </p>
+    </section>
+
+    <section id="keahlian">
+        <h2>Keahlian</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Database SQL</li>
+        </ul>
+    </section>
+
+    <section id="proyek">
+        <h2>Proyek Saya</h2>
+        <p>1. Website Portofolio Pribadi</p>
+        <p>2. Program Java Sederhana</p>
+        <p>3. Database Perpustakaan</p>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: emailkamu@example.com</p>
+        <p>GitHub: usernamekamu</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Syah Putra. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
